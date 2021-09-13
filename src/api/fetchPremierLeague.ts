@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 export const findPremierLeague = async () => {
+  // TODO: Potentially use .then .catch .finally
   try {
     const premier_league = await axios.get(`http://localhost:3003/epl`);
     const {
@@ -14,6 +15,7 @@ export const findPremierLeague = async () => {
 };
 
 export const findPremierLeagueTable = async () => {
+  // TODO: Potentially use .then .catch .finally
   try {
     const premier_league_table = await axios.get(
       `http://localhost:3003/epl_table`
